@@ -1,0 +1,2710 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0912.2314                               -->
+<workbook original-version='18.1' source-build='2025.2.3 (20252.25.0912.2314)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SingleValuePerNestSorting />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Parámetro 1' datatype='real' name='[Parámetro 1]' param-domain-type='any' role='measure' type='quantitative' value='1.0'>
+        <calculation class='tableau' formula='1.0' />
+      </column>
+    </datasource>
+    <datasource caption='complete_clean_mental_health_dataset' inline='true' name='federated.03mnjf71dd0zz81goubm61ru2dxi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='complete_clean_mental_health_dataset' name='textscan.0wuxwoq0sgpnyd18ofjil0kf9npn'>
+            <connection class='textscan' directory='C:/Users/hanam/Documents/marta/ADALAB/MartaSanz_-ADALAB/Módulo 4/Final/MentalHealth_Visualitation_LauraPArejo_MAgdalaPErez_LucianaYelicich_MartaSanz' filename='complete_clean_mental_health_dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0wuxwoq0sgpnyd18ofjil0kf9npn' name='complete_clean_mental_health_dataset.csv' table='[complete_clean_mental_health_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_US' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='edad' ordinal='1' />
+            <column datatype='string' name='genero' ordinal='2' />
+            <column datatype='string' name='estado_empleo' ordinal='3' />
+            <column datatype='string' name='ambiente_laboral' ordinal='4' />
+            <column datatype='string' name='historial_salud_mental' ordinal='5' />
+            <column datatype='string' name='busca_tratamiento' ordinal='6' />
+            <column datatype='integer' name='nivel_estres' ordinal='7' />
+            <column datatype='real' name='horas_sueno' ordinal='8' />
+            <column datatype='integer' name='dias_actividad_fisica' ordinal='9' />
+            <column datatype='integer' name='puntaje_depresion' ordinal='10' />
+            <column datatype='integer' name='puntaje_ansiedad' ordinal='11' />
+            <column datatype='integer' name='puntaje_apoyo_social' ordinal='12' />
+            <column datatype='real' name='puntaje_productividad' ordinal='13' />
+            <column datatype='string' name='riesgo_salud_mental' ordinal='14' />
+            <column datatype='string' name='nivel_depresion' ordinal='15' />
+            <column datatype='string' name='nivel_ansiedad' ordinal='16' />
+            <column datatype='string' name='grupo_edad' ordinal='17' />
+            <column datatype='string' name='nivel_estres_agrupado' ordinal='18' />
+            <column datatype='string' name='sueño_agrupado' ordinal='19' />
+            <column datatype='string' name='actividad_fisica_agrupado' ordinal='20' />
+            <column datatype='string' name='productividad_agrupado' ordinal='21' />
+            <column datatype='string' name='apoyo_social_agrupado' ordinal='22' />
+            <column datatype='string' name='convivencia' ordinal='23' />
+            <column datatype='string' name='convivencia_con_mascotas' ordinal='24' />
+            <column datatype='string' name='problemas_laborales' ordinal='25' />
+            <column datatype='string' name='problemas_económicos' ordinal='26' />
+            <column datatype='string' name='region' ordinal='27' />
+            <column datatype='string' name='tipo_empresa' ordinal='28' />
+            <column datatype='string' name='pais' ordinal='29' />
+            <column datatype='real' name='estres' ordinal='30' />
+            <column datatype='real' name='ansiedad' ordinal='31' />
+            <column datatype='real' name='depresion' ordinal='32' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>edad</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[edad]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>edad</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genero</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genero]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>genero</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estado_empleo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[estado_empleo]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>estado_empleo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ambiente_laboral</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ambiente_laboral]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>ambiente_laboral</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>historial_salud_mental</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[historial_salud_mental]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>historial_salud_mental</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>busca_tratamiento</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[busca_tratamiento]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>busca_tratamiento</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nivel_estres</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nivel_estres]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>nivel_estres</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>horas_sueno</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[horas_sueno]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>horas_sueno</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dias_actividad_fisica</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dias_actividad_fisica]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>dias_actividad_fisica</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>puntaje_depresion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[puntaje_depresion]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>puntaje_depresion</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>puntaje_ansiedad</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[puntaje_ansiedad]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>puntaje_ansiedad</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>puntaje_apoyo_social</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[puntaje_apoyo_social]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>puntaje_apoyo_social</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>puntaje_productividad</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[puntaje_productividad]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>puntaje_productividad</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>riesgo_salud_mental</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[riesgo_salud_mental]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>riesgo_salud_mental</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nivel_depresion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nivel_depresion]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>nivel_depresion</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nivel_ansiedad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nivel_ansiedad]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>nivel_ansiedad</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grupo_edad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[grupo_edad]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>grupo_edad</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nivel_estres_agrupado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nivel_estres_agrupado]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>nivel_estres_agrupado</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sueño_agrupado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sueño_agrupado]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>sueño_agrupado</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actividad_fisica_agrupado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[actividad_fisica_agrupado]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>actividad_fisica_agrupado</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>productividad_agrupado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[productividad_agrupado]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>productividad_agrupado</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>apoyo_social_agrupado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[apoyo_social_agrupado]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>apoyo_social_agrupado</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>convivencia</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[convivencia]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>convivencia</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>convivencia_con_mascotas</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[convivencia_con_mascotas]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>convivencia_con_mascotas</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>problemas_laborales</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[problemas_laborales]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>problemas_laborales</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>problemas_económicos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[problemas_económicos]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>problemas_económicos</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_empresa</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tipo_empresa]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>tipo_empresa</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pais</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pais]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>pais</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estres</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[estres]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>estres</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ansiedad</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ansiedad]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>ansiedad</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>depresion</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[depresion]</local-name>
+            <parent-name>[complete_clean_mental_health_dataset.csv]</parent-name>
+            <remote-alias>depresion</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='complete_clean_mental_health_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]' role='measure' type='quantitative' />
+      <column caption='Actividad Fisica Agrupado' datatype='string' name='[actividad_fisica_agrupado]' role='dimension' type='nominal' />
+      <column caption='Ambiente Laboral' datatype='string' name='[ambiente_laboral]' role='dimension' type='nominal' />
+      <column datatype='real' hidden='true' name='[ansiedad]' role='measure' type='quantitative' />
+      <column caption='Apoyo Social Agrupado' datatype='string' name='[apoyo_social_agrupado]' role='dimension' type='nominal' />
+      <column caption='Busca Tratamiento' datatype='string' name='[busca_tratamiento]' role='dimension' type='nominal' />
+      <column caption='Convivencia' datatype='string' name='[convivencia]' role='dimension' type='nominal' />
+      <column caption='Convivencia Con Mascotas' datatype='string' name='[convivencia_con_mascotas]' role='dimension' type='nominal' />
+      <column datatype='real' hidden='true' name='[depresion]' role='measure' type='quantitative' />
+      <column caption='Dias Actividad Fisica' datatype='integer' name='[dias_actividad_fisica]' role='measure' type='quantitative' />
+      <column caption='Edad' datatype='integer' name='[edad]' role='measure' type='quantitative' />
+      <column caption='Estado Empleo' datatype='string' name='[estado_empleo]' role='dimension' type='nominal' />
+      <column datatype='real' hidden='true' name='[estres]' role='measure' type='quantitative' />
+      <column caption='Genero' datatype='string' name='[genero]' role='dimension' type='nominal' />
+      <column caption='Grupo Edad' datatype='string' name='[grupo_edad]' role='dimension' type='nominal' />
+      <column caption='Historial Salud Mental' datatype='string' name='[historial_salud_mental]' role='dimension' type='nominal' />
+      <column caption='Horas Sueno' datatype='real' name='[horas_sueno]' role='dimension' type='ordinal' />
+      <column caption='Nivel Ansiedad' datatype='string' name='[nivel_ansiedad]' role='dimension' type='nominal' />
+      <column caption='Nivel Depresion' datatype='string' name='[nivel_depresion]' role='dimension' type='nominal' />
+      <column caption='Nivel Estres' datatype='integer' name='[nivel_estres]' role='measure' type='quantitative' />
+      <column caption='Nivel Estres Agrupado' datatype='string' name='[nivel_estres_agrupado]' role='dimension' type='nominal' />
+      <column datatype='string' name='[pais]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Problemas Económicos' datatype='string' name='[problemas_económicos]' role='dimension' type='nominal' />
+      <column caption='Problemas Laborales' datatype='string' name='[problemas_laborales]' role='dimension' type='nominal' />
+      <column caption='Productividad Agrupado' datatype='string' name='[productividad_agrupado]' role='dimension' type='nominal' />
+      <column caption='Puntaje Ansiedad' datatype='integer' name='[puntaje_ansiedad]' role='measure' type='quantitative' />
+      <column caption='Puntaje Apoyo Social' datatype='integer' name='[puntaje_apoyo_social]' role='measure' type='quantitative' />
+      <column caption='Puntaje Depresion' datatype='integer' name='[puntaje_depresion]' role='measure' type='quantitative' />
+      <column caption='Puntaje Productividad' datatype='real' name='[puntaje_productividad]' role='dimension' type='ordinal' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='Riesgo Salud Mental' datatype='string' name='[riesgo_salud_mental]' role='dimension' type='nominal' />
+      <column caption='Sueño Agrupado' datatype='string' name='[sueño_agrupado]' role='dimension' type='nominal' />
+      <column caption='Tipo Empresa' datatype='string' name='[tipo_empresa]' role='dimension' type='nominal' />
+      <column-instance column='[puntaje_depresion]' derivation='Attribute' name='[attr:puntaje_depresion:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ansiedad]' derivation='Avg' name='[avg:ansiedad:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[nivel_estres]' derivation='Avg' name='[avg:nivel_estres:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[puntaje_ansiedad]' derivation='Avg' name='[avg:puntaje_ansiedad:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[puntaje_depresion]' derivation='Avg' name='[avg:puntaje_depresion:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[nivel_estres]' derivation='Count' name='[cnt:nivel_estres:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[puntaje_depresion]' derivation='Count' name='[cnt:puntaje_depresion:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[nivel_estres]' derivation='CountD' name='[ctd:nivel_estres:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[puntaje_depresion]' derivation='CountD' name='[ctd:puntaje_depresion:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[puntaje_depresion]' derivation='None' name='[none:puntaje_depresion:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tipo_empresa]' derivation='None' name='[none:tipo_empresa:nk]' pivot='key' type='nominal' />
+      <column-instance column='[puntaje_depresion]' derivation='Sum' name='[sum:puntaje_depresion:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1cyktmq0zg3xq71elkvy008j69qw.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/27/2025 05:25:42 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9534</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>edad</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[edad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>edad</remote-alias>
+              <ordinal>1</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genero</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genero]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genero</remote-alias>
+              <ordinal>2</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>estado_empleo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[estado_empleo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>estado_empleo</remote-alias>
+              <ordinal>3</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ambiente_laboral</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ambiente_laboral]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ambiente_laboral</remote-alias>
+              <ordinal>4</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>historial_salud_mental</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[historial_salud_mental]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>historial_salud_mental</remote-alias>
+              <ordinal>5</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>busca_tratamiento</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[busca_tratamiento]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>busca_tratamiento</remote-alias>
+              <ordinal>6</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nivel_estres</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nivel_estres]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nivel_estres</remote-alias>
+              <ordinal>7</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>horas_sueno</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[horas_sueno]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>horas_sueno</remote-alias>
+              <ordinal>8</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dias_actividad_fisica</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[dias_actividad_fisica]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dias_actividad_fisica</remote-alias>
+              <ordinal>9</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>puntaje_depresion</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[puntaje_depresion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>puntaje_depresion</remote-alias>
+              <ordinal>10</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>puntaje_ansiedad</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[puntaje_ansiedad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>puntaje_ansiedad</remote-alias>
+              <ordinal>11</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>puntaje_apoyo_social</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[puntaje_apoyo_social]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>puntaje_apoyo_social</remote-alias>
+              <ordinal>12</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>101</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>puntaje_productividad</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[puntaje_productividad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>puntaje_productividad</remote-alias>
+              <ordinal>13</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>741</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>riesgo_salud_mental</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[riesgo_salud_mental]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>riesgo_salud_mental</remote-alias>
+              <ordinal>14</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nivel_depresion</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nivel_depresion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nivel_depresion</remote-alias>
+              <ordinal>15</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nivel_ansiedad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nivel_ansiedad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nivel_ansiedad</remote-alias>
+              <ordinal>16</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>grupo_edad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[grupo_edad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>grupo_edad</remote-alias>
+              <ordinal>17</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nivel_estres_agrupado</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nivel_estres_agrupado]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nivel_estres_agrupado</remote-alias>
+              <ordinal>18</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sueño_agrupado</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sueño_agrupado]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sueño_agrupado</remote-alias>
+              <ordinal>19</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>actividad_fisica_agrupado</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[actividad_fisica_agrupado]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>actividad_fisica_agrupado</remote-alias>
+              <ordinal>20</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>productividad_agrupado</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[productividad_agrupado]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>productividad_agrupado</remote-alias>
+              <ordinal>21</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>apoyo_social_agrupado</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[apoyo_social_agrupado]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>apoyo_social_agrupado</remote-alias>
+              <ordinal>22</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>convivencia</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[convivencia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>convivencia</remote-alias>
+              <ordinal>23</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>convivencia_con_mascotas</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[convivencia_con_mascotas]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>convivencia_con_mascotas</remote-alias>
+              <ordinal>24</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>problemas_laborales</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[problemas_laborales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>problemas_laborales</remote-alias>
+              <ordinal>25</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>problemas_económicos</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[problemas_económicos]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>problemas_económicos</remote-alias>
+              <ordinal>26</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>27</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_empresa</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_empresa]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tipo_empresa</remote-alias>
+              <ordinal>28</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pais</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pais]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pais</remote-alias>
+              <ordinal>29</ordinal>
+              <family>complete_clean_mental_health_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:tipo_empresa:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Educación&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tech&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Salud&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Retail&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Finanzas&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:nivel_estres:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:nivel_estres:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[ctd:nivel_estres:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:ansiedad:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[attr:puntaje_depresion:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_depresion:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:puntaje_depresion:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[ctd:puntaje_depresion:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:puntaje_depresion:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:puntaje_depresion:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_ansiedad:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Argentina&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='complete_clean_mental_health_dataset.csv' id='complete_clean_mental_health_dataset.csv_635FE0B8FB45400B938A50F4C7109D8A'>
+            <properties context=''>
+              <relation connection='textscan.0wuxwoq0sgpnyd18ofjil0kf9npn' name='complete_clean_mental_health_dataset.csv' table='[complete_clean_mental_health_dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_US' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='integer' name='edad' ordinal='1' />
+                  <column datatype='string' name='genero' ordinal='2' />
+                  <column datatype='string' name='estado_empleo' ordinal='3' />
+                  <column datatype='string' name='ambiente_laboral' ordinal='4' />
+                  <column datatype='string' name='historial_salud_mental' ordinal='5' />
+                  <column datatype='string' name='busca_tratamiento' ordinal='6' />
+                  <column datatype='integer' name='nivel_estres' ordinal='7' />
+                  <column datatype='real' name='horas_sueno' ordinal='8' />
+                  <column datatype='integer' name='dias_actividad_fisica' ordinal='9' />
+                  <column datatype='integer' name='puntaje_depresion' ordinal='10' />
+                  <column datatype='integer' name='puntaje_ansiedad' ordinal='11' />
+                  <column datatype='integer' name='puntaje_apoyo_social' ordinal='12' />
+                  <column datatype='real' name='puntaje_productividad' ordinal='13' />
+                  <column datatype='string' name='riesgo_salud_mental' ordinal='14' />
+                  <column datatype='string' name='nivel_depresion' ordinal='15' />
+                  <column datatype='string' name='nivel_ansiedad' ordinal='16' />
+                  <column datatype='string' name='grupo_edad' ordinal='17' />
+                  <column datatype='string' name='nivel_estres_agrupado' ordinal='18' />
+                  <column datatype='string' name='sueño_agrupado' ordinal='19' />
+                  <column datatype='string' name='actividad_fisica_agrupado' ordinal='20' />
+                  <column datatype='string' name='productividad_agrupado' ordinal='21' />
+                  <column datatype='string' name='apoyo_social_agrupado' ordinal='22' />
+                  <column datatype='string' name='convivencia' ordinal='23' />
+                  <column datatype='string' name='convivencia_con_mascotas' ordinal='24' />
+                  <column datatype='string' name='problemas_laborales' ordinal='25' />
+                  <column datatype='string' name='problemas_económicos' ordinal='26' />
+                  <column datatype='string' name='region' ordinal='27' />
+                  <column datatype='string' name='tipo_empresa' ordinal='28' />
+                  <column datatype='string' name='pais' ordinal='29' />
+                  <column datatype='real' name='estres' ordinal='30' />
+                  <column datatype='real' name='ansiedad' ordinal='31' />
+                  <column datatype='real' name='depresion' ordinal='32' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Ansiedad y amb. laboral'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column caption='Ambiente Laboral' datatype='string' name='[ambiente_laboral]' role='dimension' type='nominal' />
+            <column-instance column='[edad]' derivation='Attribute' name='[attr:edad:qk]' pivot='key' type='quantitative' />
+            <column caption='Edad' datatype='integer' name='[edad]' role='measure' type='quantitative' />
+            <column-instance column='[ambiente_laboral]' derivation='None' name='[none:ambiente_laboral:nk]' pivot='key' type='nominal' />
+            <column caption='Puntaje Ansiedad' datatype='integer' name='[puntaje_ansiedad]' role='measure' type='quantitative' />
+            <column-instance column='[puntaje_ansiedad]' derivation='Sum' name='[sum:puntaje_ansiedad:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:ambiente_laboral:nk]' />
+              <lod column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[attr:edad:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:puntaje_ansiedad:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:puntaje_ansiedad:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:puntaje_ansiedad:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{A8968563-030D-4D5B-99DD-9802470A75E0}' />
+    </worksheet>
+    <worksheet name='Ansiedad y prob. economicos'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column-instance column='[nivel_ansiedad]' derivation='Count' name='[cnt:nivel_ansiedad:qk]' pivot='key' type='quantitative' />
+            <column caption='Nivel Ansiedad' datatype='string' name='[nivel_ansiedad]' role='dimension' type='nominal' />
+            <column-instance column='[nivel_ansiedad]' derivation='None' name='[none:nivel_ansiedad:nk]' pivot='key' type='nominal' />
+            <column-instance column='[problemas_económicos]' derivation='None' name='[none:problemas_económicos:nk]' pivot='key' type='nominal' />
+            <column caption='Problemas Económicos' datatype='string' name='[problemas_económicos]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:nivel_ansiedad:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:nivel_ansiedad:qk]' />
+              <text column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:nivel_ansiedad:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:nivel_ansiedad:nk]</rows>
+        <cols>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:problemas_económicos:nk]</cols>
+      </table>
+      <simple-id uuid='{2E80F1ED-82B3-431F-BB19-FC091477D824}' />
+    </worksheet>
+    <worksheet name='Depresion y problemas laborales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column-instance column='[nivel_depresion]' derivation='Count' name='[cnt:nivel_depresion:qk]' pivot='key' type='quantitative' />
+            <column caption='Nivel Depresion' datatype='string' name='[nivel_depresion]' role='dimension' type='nominal' />
+            <column-instance column='[problemas_laborales]' derivation='None' name='[none:problemas_laborales:nk]' pivot='key' type='nominal' />
+            <column caption='Problemas Laborales' datatype='string' name='[problemas_laborales]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:problemas_laborales:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:nivel_depresion:qk]</rows>
+        <cols>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:problemas_laborales:nk]</cols>
+      </table>
+      <simple-id uuid='{9077D83E-6F07-4D68-A808-B82D2BF2938A}' />
+    </worksheet>
+    <worksheet name='Depresion y productividad'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column-instance column='[puntaje_productividad]' derivation='Avg' name='[avg:puntaje_productividad:qk]' pivot='key' type='quantitative' />
+            <column caption='Nivel Depresion' datatype='string' name='[nivel_depresion]' role='dimension' type='nominal' />
+            <column-instance column='[nivel_depresion]' derivation='None' name='[none:nivel_depresion:nk]' pivot='key' type='nominal' />
+            <column caption='Puntaje Productividad' datatype='real' name='[puntaje_productividad]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:nivel_depresion:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_productividad:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_productividad:qk]' />
+              <text column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_productividad:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_productividad:qk]</rows>
+        <cols>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:nivel_depresion:nk]</cols>
+      </table>
+      <simple-id uuid='{A7CE3EA9-0AD7-4853-96D2-B86CC1F670A2}' />
+    </worksheet>
+    <worksheet name='Depresión, Ansiedad y Estres'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column caption='Ambiente Laboral' datatype='string' name='[ambiente_laboral]' role='dimension' type='nominal' />
+            <column caption='Apoyo Social Agrupado' datatype='string' name='[apoyo_social_agrupado]' role='dimension' type='nominal' />
+            <column caption='Genero' datatype='string' name='[genero]' role='dimension' type='nominal' />
+            <column caption='Nivel Estres' datatype='integer' name='[nivel_estres]' role='measure' type='quantitative' />
+            <column-instance column='[ambiente_laboral]' derivation='None' name='[none:ambiente_laboral:nk]' pivot='key' type='nominal' />
+            <column-instance column='[apoyo_social_agrupado]' derivation='None' name='[none:apoyo_social_agrupado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[genero]' derivation='None' name='[none:genero:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sueño_agrupado]' derivation='None' name='[none:sueño_agrupado:nk]' pivot='key' type='nominal' />
+            <column caption='Puntaje Ansiedad' datatype='integer' name='[puntaje_ansiedad]' role='measure' type='quantitative' />
+            <column caption='Puntaje Depresion' datatype='integer' name='[puntaje_depresion]' role='measure' type='quantitative' />
+            <column caption='Sueño Agrupado' datatype='string' name='[sueño_agrupado]' role='dimension' type='nominal' />
+            <column-instance column='[nivel_estres]' derivation='Sum' name='[sum:nivel_estres:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[puntaje_ansiedad]' derivation='Sum' name='[sum:puntaje_ansiedad:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[puntaje_depresion]' derivation='Sum' name='[sum:puntaje_depresion:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:nivel_estres:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:puntaje_ansiedad:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:puntaje_depresion:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:nivel_estres:qk] + ([federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:puntaje_ansiedad:qk] + [federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:puntaje_depresion:qk]))</rows>
+        <cols>([federated.03mnjf71dd0zz81goubm61ru2dxi].[none:genero:nk] / ([federated.03mnjf71dd0zz81goubm61ru2dxi].[none:ambiente_laboral:nk] / ([federated.03mnjf71dd0zz81goubm61ru2dxi].[none:sueño_agrupado:nk] / [federated.03mnjf71dd0zz81goubm61ru2dxi].[none:apoyo_social_agrupado:nk])))</cols>
+      </table>
+      <simple-id uuid='{9C7978FA-2D93-45A1-8484-31A8B75F64CA}' />
+    </worksheet>
+    <worksheet name='Mapa'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column-instance column='[pais]' derivation='None' name='[none:pais:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[pais]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:pais:nk]' />
+              <lod column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:pais:nk]' />
+              <geometry column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Latitude (generated)]</rows>
+        <cols>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{72C7BA0F-8CAD-47A7-AFE9-F6F0E0252FD1}' />
+    </worksheet>
+    <worksheet name='Medidores por empresa'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column-instance column='[nivel_estres]' derivation='Avg' name='[avg:nivel_estres:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[puntaje_ansiedad]' derivation='Avg' name='[avg:puntaje_ansiedad:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[puntaje_depresion]' derivation='Avg' name='[avg:puntaje_depresion:qk]' pivot='key' type='quantitative' />
+            <column caption='Nivel Estres' datatype='integer' name='[nivel_estres]' role='measure' type='quantitative' />
+            <column-instance column='[tipo_empresa]' derivation='None' name='[none:tipo_empresa:nk]' pivot='key' type='nominal' />
+            <column caption='Puntaje Ansiedad' datatype='integer' name='[puntaje_ansiedad]' role='measure' type='quantitative' />
+            <column caption='Puntaje Depresion' datatype='integer' name='[puntaje_depresion]' role='measure' type='quantitative' />
+            <column caption='Tipo Empresa' datatype='string' name='[tipo_empresa]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:nivel_estres:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_ansiedad:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_depresion:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</rows>
+        <cols>([federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk] / [federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names])</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Educación&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:nivel_estres:qk]&quot;</value>
+                <value>5.5202952029520294</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Educación&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_ansiedad:qk]&quot;</value>
+                <value>10.623089088033737</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Educación&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_depresion:qk]&quot;</value>
+                <value>13.638903531892462</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Finanzas&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:nivel_estres:qk]&quot;</value>
+                <value>5.6406411582213032</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Retail&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:nivel_estres:qk]&quot;</value>
+                <value>5.5650035137034433</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Salud&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:nivel_estres:qk]&quot;</value>
+                <value>5.6142167011732234</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tech&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:nivel_estres:qk]&quot;</value>
+                <value>5.5330271988696573</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Finanzas&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_depresion:qk]&quot;</value>
+                <value>13.916235780765254</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Finanzas&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_ansiedad:qk]&quot;</value>
+                <value>10.519131334022751</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Retail&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_depresion:qk]&quot;</value>
+                <value>13.486999297259311</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Retail&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_ansiedad:qk]&quot;</value>
+                <value>10.44483485593816</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Salud&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_depresion:qk]&quot;</value>
+                <value>13.421670117322291</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Salud&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_ansiedad:qk]&quot;</value>
+                <value>10.614216701173223</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tech&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_depresion:qk]&quot;</value>
+                <value>13.654185800070646</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:tipo_empresa:nk]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]</field>
+                  <field>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tech&quot;</value>
+                <value>&quot;[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_ansiedad:qk]&quot;</value>
+                <value>10.535499823383963</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{E94C642A-A009-455E-BC56-4FFB12CF0D99}' />
+    </worksheet>
+    <worksheet name='Problemas economicos y salud mental'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column caption='Edad' datatype='integer' name='[edad]' role='measure' type='quantitative' />
+            <column-instance column='[problemas_económicos]' derivation='None' name='[none:problemas_económicos:nk]' pivot='key' type='nominal' />
+            <column-instance column='[riesgo_salud_mental]' derivation='None' name='[none:riesgo_salud_mental:nk]' pivot='key' type='nominal' />
+            <column-instance column='[edad]' derivation='Sum' name='[pcto:sum:edad:qk:4]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.03mnjf71dd0zz81goubm61ru2dxi].[problemas_económicos]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column caption='Problemas Económicos' datatype='string' name='[problemas_económicos]' role='dimension' type='nominal' />
+            <column caption='Riesgo Salud Mental' datatype='string' name='[riesgo_salud_mental]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:riesgo_salud_mental:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[pcto:sum:edad:qk:4]</rows>
+        <cols>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:problemas_económicos:nk]</cols>
+      </table>
+      <simple-id uuid='{C932D62E-9D0A-4350-9002-306183B54EF7}' />
+    </worksheet>
+    <worksheet name='Proporciones tipo convivencias'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column-instance column='[convivencia]' derivation='Count' name='[cnt:convivencia:qk]' pivot='key' type='quantitative' />
+            <column caption='Convivencia' datatype='string' name='[convivencia]' role='dimension' type='nominal' />
+            <column-instance column='[convivencia]' derivation='None' name='[none:convivencia:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia:nk]' />
+              <wedge-size column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:convivencia:qk]' />
+              <size column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:convivencia:qk]' />
+              <text column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{11BBCDEC-DEF2-48E7-8C51-E2DACE0BB6B8}' />
+    </worksheet>
+    <worksheet name='Rel. Prob. Econ. y Laborales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column-instance column='[problemas_económicos]' derivation='Count' name='[cnt:problemas_económicos:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[problemas_laborales]' derivation='Count' name='[cnt:problemas_laborales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[problemas_económicos]' derivation='None' name='[none:problemas_económicos:nk]' pivot='key' type='nominal' />
+            <column-instance column='[problemas_laborales]' derivation='None' name='[none:problemas_laborales:nk]' pivot='key' type='nominal' />
+            <column caption='Problemas Económicos' datatype='string' name='[problemas_económicos]' role='dimension' type='nominal' />
+            <column caption='Problemas Laborales' datatype='string' name='[problemas_laborales]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:problemas_laborales:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:problemas_laborales:nk]' shelf='rows' />
+          </single-value-per-nest-shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-style' value='normal' />
+            <format attr='font-weight' value='normal' />
+            <format attr='text-orientation' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:problemas_laborales:qk]' />
+              <lod column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:problemas_económicos:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:problemas_laborales:nk]</rows>
+        <cols>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:problemas_económicos:nk]</cols>
+      </table>
+      <simple-id uuid='{D9047C8F-DAE5-4BA5-A55B-B6474A8CD28E}' />
+    </worksheet>
+    <worksheet name='Rel. Stress y convivencia'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column-instance column='[nivel_estres_agrupado]' derivation='Count' name='[cnt:nivel_estres_agrupado:qk]' pivot='key' type='quantitative' />
+            <column caption='Convivencia' datatype='string' name='[convivencia]' role='dimension' type='nominal' />
+            <column caption='Nivel Estres Agrupado' datatype='string' name='[nivel_estres_agrupado]' role='dimension' type='nominal' />
+            <column-instance column='[convivencia]' derivation='None' name='[none:convivencia:nk]' pivot='key' type='nominal' />
+            <column-instance column='[nivel_estres_agrupado]' derivation='None' name='[none:nivel_estres_agrupado:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:nivel_estres_agrupado:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Bajo&quot;</bucket>
+              <bucket>&quot;Moderado&quot;</bucket>
+              <bucket>&quot;Alto&quot;</bucket>
+              <bucket>&quot;Muy alto&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:nivel_estres_agrupado:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:nivel_estres_agrupado:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:nivel_estres_agrupado:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:nivel_estres_agrupado:qk]</rows>
+        <cols>([federated.03mnjf71dd0zz81goubm61ru2dxi].[none:nivel_estres_agrupado:nk] / [federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia:nk])</cols>
+      </table>
+      <simple-id uuid='{6943EEF4-46B7-4547-8024-547B3DA9D571}' />
+    </worksheet>
+    <worksheet name='Rel. Stress y convivencia (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column caption='Convivencia' datatype='string' name='[convivencia]' role='dimension' type='nominal' />
+            <column caption='Nivel Estres' datatype='integer' name='[nivel_estres]' role='measure' type='quantitative' />
+            <column caption='Nivel Estres Agrupado' datatype='string' name='[nivel_estres_agrupado]' role='dimension' type='nominal' />
+            <column-instance column='[convivencia]' derivation='None' name='[none:convivencia:nk]' pivot='key' type='nominal' />
+            <column-instance column='[nivel_estres_agrupado]' derivation='None' name='[none:nivel_estres_agrupado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[nivel_estres]' derivation='Sum' name='[sum:nivel_estres:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:nivel_estres_agrupado:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Bajo&quot;</bucket>
+              <bucket>&quot;Moderado&quot;</bucket>
+              <bucket>&quot;Alto&quot;</bucket>
+              <bucket>&quot;Muy alto&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia:nk]</rows>
+        <cols>([federated.03mnjf71dd0zz81goubm61ru2dxi].[none:nivel_estres_agrupado:nk] * [federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:nivel_estres:qk])</cols>
+      </table>
+      <simple-id uuid='{C9B0BBA5-0707-4912-885E-AF64BD009C52}' />
+    </worksheet>
+    <worksheet name='Rel. Stress y mascotas'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column caption='Convivencia Con Mascotas' datatype='string' name='[convivencia_con_mascotas]' role='dimension' type='nominal' />
+            <column caption='Nivel Estres' datatype='integer' name='[nivel_estres]' role='measure' type='quantitative' />
+            <column-instance column='[convivencia_con_mascotas]' derivation='None' name='[none:convivencia_con_mascotas:nk]' pivot='key' type='nominal' />
+            <column-instance column='[nivel_estres]' derivation='Sum' name='[sum:nivel_estres:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:nivel_estres:qk]' />
+              <text column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia_con_mascotas:nk]' />
+              <color column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia_con_mascotas:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0BCD0031-0A75-4848-A7E8-419A8CF8EEDC}' />
+    </worksheet>
+    <worksheet name='Rel. stress y sueño'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column caption='Nivel Estres' datatype='integer' name='[nivel_estres]' role='measure' type='quantitative' />
+            <column-instance column='[sueño_agrupado]' derivation='None' name='[none:sueño_agrupado:nk]' pivot='key' type='nominal' />
+            <column caption='Sueño Agrupado' datatype='string' name='[sueño_agrupado]' role='dimension' type='nominal' />
+            <column-instance column='[nivel_estres]' derivation='Sum' name='[sum:nivel_estres:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:sueño_agrupado:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;&lt;4h&quot;</bucket>
+              <bucket>&quot;5-6h&quot;</bucket>
+              <bucket>&quot;7-8h&quot;</bucket>
+              <bucket>&quot;&gt;9h&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:nivel_estres:qk]</rows>
+        <cols>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:sueño_agrupado:nk]</cols>
+      </table>
+      <simple-id uuid='{7BEF93D3-98EB-44AA-A840-0407401D9091}' />
+    </worksheet>
+    <worksheet name='Rel. stress y sueño (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column caption='Nivel Estres' datatype='integer' name='[nivel_estres]' role='measure' type='quantitative' />
+            <column caption='Nivel Estres Agrupado' datatype='string' name='[nivel_estres_agrupado]' role='dimension' type='nominal' />
+            <column-instance column='[nivel_estres_agrupado]' derivation='None' name='[none:nivel_estres_agrupado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sueño_agrupado]' derivation='None' name='[none:sueño_agrupado:nk]' pivot='key' type='nominal' />
+            <column caption='Sueño Agrupado' datatype='string' name='[sueño_agrupado]' role='dimension' type='nominal' />
+            <column-instance column='[nivel_estres]' derivation='Sum' name='[sum:nivel_estres:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:sueño_agrupado:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;&lt;4h&quot;</bucket>
+              <bucket>&quot;5-6h&quot;</bucket>
+              <bucket>&quot;7-8h&quot;</bucket>
+              <bucket>&quot;&gt;9h&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.03mnjf71dd0zz81goubm61ru2dxi].[none:nivel_estres_agrupado:nk] * [federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:nivel_estres:qk])</rows>
+        <cols>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:sueño_agrupado:nk]</cols>
+      </table>
+      <simple-id uuid='{0072A310-A69B-455F-A825-6B9282AAA420}' />
+    </worksheet>
+    <worksheet name='Relacion estres y depresion'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complete_clean_mental_health_dataset' name='federated.03mnjf71dd0zz81goubm61ru2dxi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03mnjf71dd0zz81goubm61ru2dxi'>
+            <column datatype='integer' name='[ID]' role='measure' type='quantitative' />
+            <column caption='Nivel Estres' datatype='integer' name='[nivel_estres]' role='measure' type='quantitative' />
+            <column-instance column='[ID]' derivation='None' name='[none:ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[nivel_estres]' derivation='None' name='[none:nivel_estres:ok]' pivot='key' type='ordinal' />
+            <column caption='Puntaje Depresion' datatype='integer' name='[puntaje_depresion]' role='measure' type='quantitative' />
+            <column-instance column='[puntaje_depresion]' derivation='Sum' name='[sum:puntaje_depresion:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:ID:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03mnjf71dd0zz81goubm61ru2dxi].[sum:puntaje_depresion:qk]</rows>
+        <cols>[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:nivel_estres:ok]</cols>
+      </table>
+      <simple-id uuid='{9C37B8B6-11A3-4058-80A4-E1D55082CE56}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8E8F0077-01D6-4656-AA47-8F56C5FBE183}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Mapa'>
+      <cards>
+        <edge name='left'>
+          <strip size='165'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:pais:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2749C885-5679-4AEF-8D04-2D941C128B08}' />
+    </window>
+    <window class='worksheet' name='Rel. stress y sueño'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF51C79B-2456-4034-83BA-E455C1065C4B}' />
+    </window>
+    <window class='worksheet' name='Rel. stress y sueño (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B3B926C4-EDA6-48E4-8B81-9438CBD2BFF3}' />
+    </window>
+    <window class='worksheet' name='Rel. Stress y convivencia'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E54201D8-9D26-430B-9213-3AF7ED75F267}' />
+    </window>
+    <window class='worksheet' name='Rel. Stress y convivencia (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='173'>
+            <card pane-specification-id='2' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{34EAF0F7-4735-4AA5-8ACE-7DDC1382FA6E}' />
+    </window>
+    <window class='worksheet' name='Rel. Stress y mascotas'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia_con_mascotas:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0B2FF641-B406-4AEB-8922-E52CF8BABB23}' />
+    </window>
+    <window class='worksheet' name='Rel. Prob. Econ. y Laborales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:problemas_laborales:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4FBD540E-AC12-4C45-A549-874A53C7CD72}' />
+    </window>
+    <window class='worksheet' name='Proporciones tipo convivencias'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:convivencia:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:convivencia:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{36B1BB9A-4485-4041-939E-16E3D199F4D8}' />
+    </window>
+    <window class='worksheet' name='Medidores por empresa'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C18C17D2-C567-4D45-BD00-71C7B0CFBBAC}' />
+    </window>
+    <window class='worksheet' name='Depresion y problemas laborales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:problemas_laborales:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{68AA0E0C-6599-49B7-8693-4FF717CB73BA}' />
+    </window>
+    <window class='worksheet' name='Ansiedad y prob. economicos'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[cnt:nivel_ansiedad:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A4575C0-6AA4-4725-BE49-60FBEF7B6BC0}' />
+    </window>
+    <window class='worksheet' name='Depresión, Ansiedad y Estres'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5DF20A37-5E2A-4BCA-B237-200153F19166}' />
+    </window>
+    <window class='worksheet' name='Ansiedad y amb. laboral'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card mode='type_in' param='[Parameters].[Parámetro 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2606F85D-0E16-4BD6-8ACD-EA48A81FE938}' />
+    </window>
+    <window class='worksheet' name='Relacion estres y depresion'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9EC8D12F-6C3C-4BF9-AC6F-A950E7CC4EB2}' />
+    </window>
+    <window class='worksheet' name='Problemas economicos y salud mental'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:riesgo_salud_mental:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{71098E3C-A74D-4955-8A60-57D60BBC1C0E}' />
+    </window>
+    <window class='worksheet' name='Depresion y productividad'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.03mnjf71dd0zz81goubm61ru2dxi].[avg:puntaje_productividad:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CB4EFD6A-C640-4485-8F05-FD29997570B0}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{1638DA7E-71F5-4CC7-BCB5-483BBA4F9CFE}' />
+    </window>
+  </windows>
+</workbook>
