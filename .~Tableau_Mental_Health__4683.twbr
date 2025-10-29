@@ -2049,7 +2049,7 @@
             <column caption='Puntaje Ansiedad' datatype='integer' name='[puntaje_ansiedad]' role='measure' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]'>
-            <groupfilter function='member' level='[pais]' member='&quot;Brasil&quot;' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[pais]' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]</column>
@@ -2148,7 +2148,7 @@
             <column datatype='string' name='[pais]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]'>
-            <groupfilter function='member' level='[pais]' member='&quot;Brasil&quot;' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[pais]' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]</column>
@@ -2213,6 +2213,10 @@
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.03mnjf71dd0zz81goubm61ru2dxi].[Longitude (generated)]' field-type='quantitative' max='26782574.550479803' min='-4995661.2168586059' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.03mnjf71dd0zz81goubm61ru2dxi].[Latitude (generated)]' field-type='quantitative' max='4659707.2030906714' min='-24300753.805566415' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
           <style-rule element='legend'>
             <format attr='col-width' field='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:pais:nk]' value='106' />
           </style-rule>
@@ -2708,7 +2712,7 @@
             <column-instance column='[Calculation_980236606756769802]' derivation='User' name='[usr:Calculation_980236606756769802:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]'>
-            <groupfilter function='member' level='[pais]' member='&quot;Brasil&quot;' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[pais]' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]</column>
@@ -2772,7 +2776,7 @@
             <column-instance column='[Calculation_980236606755094535]' derivation='User' name='[usr:Calculation_980236606755094535:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]'>
-            <groupfilter function='member' level='[pais]' member='&quot;Brasil&quot;' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[pais]' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]</column>
@@ -2869,7 +2873,7 @@
             <column-instance column='[Calculation_980236606752641027]' derivation='User' name='[usr:Calculation_980236606752641027:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]'>
-            <groupfilter function='member' level='[pais]' member='&quot;Brasil&quot;' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[pais]' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]</column>
@@ -2932,7 +2936,7 @@
             <column-instance column='[Calculation_980236606753132548]' derivation='User' name='[usr:Calculation_980236606753132548:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]'>
-            <groupfilter function='member' level='[pais]' member='&quot;Brasil&quot;' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[pais]' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]</column>
@@ -3014,7 +3018,7 @@
             </style>
           </datasource-dependencies>
           <filter class='categorical' column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]'>
-            <groupfilter function='member' level='[pais]' member='&quot;Brasil&quot;' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[pais]' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]</column>
@@ -3275,7 +3279,7 @@
             <column caption='Sueño Agrupado' datatype='string' name='[sueño_agrupado]' role='dimension' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[Action (pais)]'>
-            <groupfilter function='member' level='[pais]' member='&quot;Brasil&quot;' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[pais]' user:ui-action-filter='[Action1_333FD433F0664C62AD6EBCD631BB8E92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <manual-sort column='[federated.03mnjf71dd0zz81goubm61ru2dxi].[none:sueño_agrupado:nk]' direction='ASC'>
             <dictionary>
@@ -3462,7 +3466,7 @@
                 </zone>
               </zone>
               <zone h='20009' id='10' param='vert' type-v2='layout-flow' w='12711' x='17082' y='0'>
-                <zone fixed-size='81' h='11329' id='46' is-fixed='true' name='Prom. nivel estres general' w='9700' x='18791' y='4336'>
+                <zone fixed-size='81' h='10547' id='46' is-fixed='true' name='Prom. nivel estres general' w='9700' x='18791' y='4036'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3485,7 +3489,7 @@
                 </zone-style>
               </zone>
               <zone h='20009' id='11' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='13799' x='71169' y='0'>
-                <zone h='20000' id='50' name='Porcentaje personas con problemas laborales' w='13751' x='71196' y='0'>
+                <zone h='20052' id='50' name='Porcentaje personas con problemas laborales' w='13751' x='71196' y='0'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3496,7 +3500,7 @@
                 </zone>
               </zone>
               <zone h='20009' id='12' param='horz' type-v2='layout-flow' w='13791' x='43585' y='0'>
-                <zone h='10490' id='48' name='Prom. nivel de depresión general' w='12163' x='44399' y='1399'>
+                <zone h='9766' id='48' name='Prom. nivel de depresión general' w='12163' x='44399' y='1302'>
                   <layout-cache fixed-size-h='67' fixed-size-w='139' type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3514,7 +3518,7 @@
                 </zone-style>
               </zone>
               <zone h='20009' id='13' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='13811' x='84968' y='0'>
-                <zone h='20000' id='51' name='Porcentaje de personas con problemas economicos' w='13832' x='84947' y='0'>
+                <zone h='20052' id='51' name='Porcentaje de personas con problemas economicos' w='13832' x='84947' y='0'>
                   <layout-cache fixed-size-h='71' fixed-size-w='147' type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3525,7 +3529,7 @@
                 </zone>
               </zone>
               <zone h='20009' id='14' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='13793' x='57376' y='0'>
-                <zone h='20000' id='49' name='Horas de sueño promedio' w='13832' x='57364' y='0'>
+                <zone h='20052' id='49' name='Horas de sueño promedio' w='13832' x='57364' y='0'>
                   <layout-cache fixed-size-h='89' fixed-size-w='60' type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3536,7 +3540,7 @@
                 </zone>
               </zone>
               <zone h='20009' id='15' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='13792' x='29793' y='0'>
-                <zone h='15244' id='47' name='Prom. nivel de ansiedad general' w='11879' x='30757' y='2378'>
+                <zone h='15625' id='47' name='Prom. nivel de ansiedad general' w='11879' x='30757' y='2214'>
                   <layout-cache fixed-size-h='67' type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3559,7 +3563,7 @@
                 </zone-style>
               </zone>
               <zone h='79991' id='16' param='vert' type-v2='layout-flow' w='42754' x='56025' y='20009'>
-                <zone fixed-size='375' h='50900' id='19' is-fixed='true' name='Rel. stress y sueño' w='42754' x='56025' y='20009'>
+                <zone fixed-size='375' h='50781' id='19' is-fixed='true' name='Rel. stress y sueño' w='42754' x='56025' y='20009'>
                   <layout-cache cell-count-w='4' minheight='158' non-cell-size-w='59' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#e6e6e6' />
@@ -3571,7 +3575,7 @@
                     <format attr='background-color' value='#ffffff' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='208' h='29091' id='21' is-fixed='true' name='Género y ansiedad' w='42754' x='56025' y='70909'>
+                <zone fixed-size='208' h='27083' id='21' is-fixed='true' name='Género y ansiedad' w='42754' x='56025' y='70790'>
                   <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#e6e6e6' />
@@ -3887,7 +3891,7 @@
       <zones>
         <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='100000' id='16' param='vert' type-v2='layout-flow' w='47985' x='50794' y='0'>
-            <zone fixed-size='306' h='45594' id='28' is-fixed='true' name='Rel. Stress y mascotas' w='47985' x='50794' y='0'>
+            <zone fixed-size='306' h='42448' id='28' is-fixed='true' name='Rel. Stress y mascotas' w='47985' x='50794' y='0'>
               <layout-cache type-h='cell' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#e6e6e6' />
@@ -3899,8 +3903,8 @@
                 <format attr='background-color' value='#ffffff' />
               </zone-style>
             </zone>
-            <zone h='54406' id='34' name='Ansiedad y actividad fisica' w='47985' x='50794' y='45594'>
-              <layout-cache type-h='cell' type-w='fixed' />
+            <zone h='57552' id='34' name='Ansiedad y actividad fisica' w='47985' x='50794' y='42448'>
+              <layout-cache cell-count-h='1' non-cell-size-h='37' type-h='cell' type-w='fixed' />
               <zone-style>
                 <format attr='border-color' value='#e6e6e6' />
                 <format attr='border-style' value='solid' />
@@ -4129,7 +4133,7 @@
           <zone h='100000' id='44' param='horz' type-v2='layout-flow' w='82913' x='17087' y='0'>
             <zone h='100000' id='42' type-v2='layout-basic' w='82913' x='17087' y='0'>
               <zone h='100000' id='16' param='vert' type-v2='layout-flow' w='35879' x='64121' y='0'>
-                <zone h='47063' id='34' name='Depresion y problemas laborales' w='35879' x='64121' y='0'>
+                <zone h='47265' id='34' name='Depresion y problemas laborales' w='35879' x='64121' y='0'>
                   <layout-cache minheight='177' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#e6e6e6' />
@@ -4143,7 +4147,7 @@
                     <format attr='background-color' value='#ffffff' />
                   </zone-style>
                 </zone>
-                <zone h='52937' id='41' name='Depresion y productividad' w='35879' x='64121' y='47063'>
+                <zone h='52734' id='41' name='Depresion y productividad' w='35879' x='64121' y='47265'>
                   <layout-cache minheight='219' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#e6e6e6' />
@@ -4946,7 +4950,7 @@
       </viewpoint>
       <simple-id uuid='{0751ED6A-294F-4494-B299-F7A8ECC95AA4}' />
     </window>
-    <window class='dashboard' name='Dashboard 01'>
+    <window class='dashboard' maximized='true' name='Dashboard 01'>
       <viewpoints>
         <viewpoint name='Género y ansiedad' />
         <viewpoint name='Horas de sueño promedio' />
@@ -4963,7 +4967,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='49' />
+      <active id='17' />
       <simple-id uuid='{E7072F01-CC41-4328-8833-EAC7C40C5AC0}' />
     </window>
     <window class='dashboard' name='Dashboard 02'>
@@ -4981,10 +4985,10 @@
           <zoom type='fit-width' />
         </viewpoint>
       </viewpoints>
-      <active id='63' />
+      <active id='64' />
       <simple-id uuid='{A94D85B1-692A-4ECB-A16F-1EA621B43221}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 03'>
+    <window class='dashboard' name='Dashboard 03'>
       <viewpoints>
         <viewpoint name='Depresion y problemas laborales'>
           <zoom type='entire-view' />
